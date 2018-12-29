@@ -189,7 +189,7 @@ function autocomplete(inp, arr) {
 /*An array containing all the resource_type in the kubernetes:*/
 var resource_type = ["apiservices","certificatesigningrequests","clusters","clusterrolebindings","clusterroles","componentstatuses","configmaps","controllerrevisions","cronjobs","customresourcedefinition","daemonsets","deployments","endpoints","events","horizontalpodautoscalers","ingresses","jobs","limitranges","namespaces","networkpolicies","nodes","persistentvolumeclaims","persistentvolumes","poddisruptionbudget","podpreset","pods","podsecuritypolicies","podtemplates","replicasets","replicationcontrollers","resourcequotas","rolebindings","roles","secrets","serviceaccounts","services","statefulsets","storageclasses"];
 
-var command = ["create","get","describe","delete","top","drain","cordon","uncordon"];
+var command = ["create","expose","run","set","explain","get","edit","delete","rollout","scale","autoscale","certificate","cluster-info","top","cordon","uncordon","drain","taint","describe","logs","attach","exec","port-forward","proxy","cp","auth","apply","patch","replace","wait","convert","label","annotate","completion","alpha","api-resources","api-versions","config","plugin","version"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the resource_type array as possible autocomplete values:*/
 autocomplete(document.getElementById("TYPE"), resource_type);
